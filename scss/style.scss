@@ -1,0 +1,462 @@
+@import "colores";
+@import"fuentes";
+@import"variables";
+@import"mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.logoNombre {
+    display: flex;
+    margin-left: 10px;
+
+    h1 {
+        padding: 15px;
+        font-size: 30px;
+        color: #faefef;
+    }
+}
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+    background-color: $fondoClaro;
+    position: relative;
+    top: 75px;
+
+    .carousel {
+        width: 500px;
+        height: auto;
+        padding: 4%;
+    }
+}
+
+
+/* Empieza MAIN  */
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: $fondoClaro;
+
+    .principal {
+        color: $marronOscuro;
+        padding: 20px;
+        text-align: justify;
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        font-size: $fuenteMedia;
+
+
+        ul {
+            list-style: none;
+        }
+
+        .centrado {
+            text-align: center;
+            margin: 20px;
+
+        }
+    }
+
+    .colaborando {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 380px;
+        font-size: $fuenteChica;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        background-color: $fondoOscuro;
+        color: $colorPiel;
+
+        .textoInterno {
+            padding: 10px;
+            text-align: justify;
+
+        }
+
+    }
+
+    #adoptables {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card {
+            margin: 5px;
+        }
+    }
+
+
+}
+
+#team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px 60px 40px;
+    background-color: $fondoClaro;
+
+    h5 {
+        width: 40%;
+        text-align: center;
+        color: black;
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+
+    .trabajadores {
+        width: 250px;
+        height: 250px;
+        background-size: auto 250px;
+        margin: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $colorPiel;
+        @include overlay;
+
+        .overlay-text {
+            transform: translateY(50px);
+            z-index: 999999;
+            transition: all 0.6s;
+            opacity: 0;
+            visibility: hidden;
+
+            h3 {
+            
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 1px;
+            }
+
+            p {
+              
+                font-style: italic;
+                font-size: 13px;
+                margin-top: 0px;
+                font-weight: 200;
+            }
+
+        }
+    }
+
+    .trabajadores:hover .overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .trabajadores:hover .overlay .overlay-text {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #persona1 {
+        background-image: url(../img/persona1.jpg);
+    }
+
+    #persona2 {
+        background-image: url(../img/persona2.jpg);
+    }
+
+    #persona3 {
+        background-image: url(../img/persona3.jpg);
+    }
+
+    #persona4 {
+        background-image: url(../img/persona4.jpg);
+    }
+}
+
+// #venta {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-evenly;
+//     flex-wrap: wrap;
+
+//     img {
+//         width: 90%;
+//         height: auto;
+//     }
+
+//     .producto {
+//         width: 350px;
+//         background-color: white;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         border: 1px solid rgb(102, 76, 76);
+
+
+//         &__titulo {
+//             color: red;
+//         }
+
+//         .producto__foto {
+//             width: 300px;
+//             height: 450px;
+//         }
+//     }
+// }
+
+
+/*----Legislacion---*/
+#linkALey {
+    font-size: 40px;
+    text-align: center;
+    align-self: center;
+    border: 1px solid;
+    padding: 5px;
+    margin-top: 10px;
+    width: 150px;
+
+    p {
+        font-size: 20px;
+    }
+
+    a {
+        text-decoration-line: none;
+        color: $marronOscuro;
+    }
+
+    a:hover {
+        color: $azulHover;
+        transform: $escalador;
+    }
+}
+
+#linkALey:hover {
+    background-color: #fff;
+
+}
+
+/* ---- Empieza Formulario Contacto----*/
+
+.espacioContacto {
+    background-color: $fondoClaro;
+
+
+    .location {
+        padding-top: 20px;
+
+        iframe {
+            height: 150px;
+            padding: 10px;
+            border: none;
+            margin: 30px;
+        }
+    }
+
+
+    form {
+        .tipoDeMascota {
+            display: flex;
+
+            fieldset {
+                padding: 10px 30px 10px 0;
+            }
+        }
+
+        .envio {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .especie {
+            width: 80px;
+            height: 25px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        input[type=submit] {
+            height: 35px;
+            background-color:rgb(32, 167, 32);
+            color: #fff;
+            font-size: 14px;
+            line-height: 14px;
+            border-radius: 20px;
+            padding: 5px 20px;
+            border: none;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            cursor: pointer;
+            margin-right: 20px;
+            position: relative;
+            bottom: 8px;
+        }
+
+        input[type=submit]:hover {
+            background-color: $azulHover;
+        }
+    }
+}
+
+/* ---- Termina Formulario Contacto----*/
+/* ---Empieza FOOTER ---*/
+
+footer {
+    background-image: $gradiente;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    color: $marronOscuro;
+    display: flex;
+    font-size: 20px;
+
+
+    .socialmedia {
+        font-size: 18px;
+        height: 40px;
+        width: 80%;
+        margin-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+
+        .enlaces {
+            font-size: 26px;
+            padding-left: 5px;
+
+            a {
+                padding: 8px;
+                color: $marronOscuro;
+                transition: .5s;
+            }
+
+            a:hover {
+                color: $azulHover;
+
+            }
+        }
+    }
+}
+
+/* ---Termina FOOTER ---*/
+/*---Whatsapp---*/
+#wa a {
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+}
+
+/*----medias query----*/
+
+
+@media only screen and (max-width: 800px) {
+
+.espacioContacto{
+    padding: 10%;
+}
+.mascotas{
+    justify-content: center;
+    align-items: center;
+}
+}
+
+
+@media only screen and (min-width: 992px) {
+
+
+
+
+    .principal {
+        width: 60%;
+        padding: 50px;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+
+    .colaborando {
+        align-self: center;
+    }
+
+    #adoptables {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+
+    }
+
+    .espacioContacto {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .location iframe {
+        width: 450px;
+        height: 200px;
+    }
+
+    #formulario1 {
+        margin: 30px;
+    }
+
+    .carrusel {
+        .carousel {
+            width: 60%;
+            height: auto;
+            padding: 4%;
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+
+
+
+    .principal {
+
+        padding: 50px;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+
+    #adoptables {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    // .espacioContacto {
+    //     display: flex;
+    //     flex-direction: row-reverse;
+    //     align-items: center;
+    //     justify-content: space-evenly;
+    // }
+
+    // .location iframe {
+    //     width: 450px;
+    //     height: 200px;
+    // }
+
+    #formulario1 {
+        margin: 30px;
+    }
+}
