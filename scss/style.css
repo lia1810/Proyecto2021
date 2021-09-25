@@ -24,14 +24,12 @@
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #ece3d9;
-  position: relative;
-  top: 75px;
+  padding-top: 100px;
 }
 
 .carrusel .carousel {
   width: 500px;
   height: auto;
-  padding: 4%;
 }
 
 /* Empieza MAIN  */
@@ -45,6 +43,7 @@ main {
       flex-wrap: wrap;
   overflow: hidden;
   background-color: #ece3d9;
+  padding-top: 100px;
 }
 
 main .principal {
@@ -59,6 +58,9 @@ main .principal {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   font-size: 20px;
@@ -144,10 +146,19 @@ main #adoptables .card {
   margin-bottom: 30px;
 }
 
+#team .equipo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #team .trabajadores {
-  width: 250px;
-  height: 250px;
-  background-size: auto 250px;
+  width: 320px;
+  height: 320px;
+  background-size: auto 320px;
   margin: 20px;
   border-radius: 50%;
   overflow: hidden;
@@ -265,6 +276,8 @@ main #adoptables .card {
 /* ---- Empieza Formulario Contacto----*/
 .espacioContacto {
   background-color: #ece3d9;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
 }
 
 .espacioContacto .location {
@@ -272,8 +285,6 @@ main #adoptables .card {
 }
 
 .espacioContacto .location iframe {
-  height: 150px;
-  padding: 10px;
   border: none;
   margin: 30px;
 }
@@ -378,6 +389,11 @@ footer .socialmedia .enlaces a:hover {
 
 /*----medias query----*/
 @media only screen and (max-width: 800px) {
+  .textoPrincipal {
+    width: 380px;
+    font-size: 16px;
+    margin: 20px;
+  }
   .espacioContacto {
     padding: 10%;
   }
@@ -437,11 +453,6 @@ footer .socialmedia .enlaces a:hover {
   }
   #formulario1 {
     margin: 30px;
-  }
-  .carrusel .carousel {
-    width: 60%;
-    height: auto;
-    padding: 4%;
   }
 }
 

@@ -14,12 +14,10 @@
   display: flex;
   justify-content: center;
   background-color: #ece3d9;
-  position: relative;
-  top: 75px; }
+  padding-top: 100px; }
   .carrusel .carousel {
     width: 500px;
-    height: auto;
-    padding: 4%; }
+    height: auto; }
 
 /* Empieza MAIN  */
 main {
@@ -27,7 +25,8 @@ main {
   justify-content: space-around;
   flex-wrap: wrap;
   overflow: hidden;
-  background-color: #ece3d9; }
+  background-color: #ece3d9;
+  padding-top: 100px; }
   main .principal {
     color: #472c1b;
     padding: 20px;
@@ -35,6 +34,7 @@ main {
     line-height: 1.5;
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex-wrap: nowrap;
     font-size: 20px; }
     main .principal ul {
@@ -77,10 +77,13 @@ main {
     font-size: 15px;
     margin-top: 5px;
     margin-bottom: 30px; }
+  #team .equipo {
+    justify-content: center;
+    align-items: center; }
   #team .trabajadores {
-    width: 250px;
-    height: 250px;
-    background-size: auto 250px;
+    width: 320px;
+    height: 320px;
+    background-size: auto 320px;
     margin: 20px;
     border-radius: 50%;
     overflow: hidden; }
@@ -151,12 +154,11 @@ main {
 
 /* ---- Empieza Formulario Contacto----*/
 .espacioContacto {
-  background-color: #ece3d9; }
+  background-color: #ece3d9;
+  flex-wrap: wrap-reverse; }
   .espacioContacto .location {
     padding-top: 20px; }
     .espacioContacto .location iframe {
-      height: 150px;
-      padding: 10px;
       border: none;
       margin: 30px; }
   .espacioContacto form .tipoDeMascota {
@@ -225,6 +227,10 @@ footer {
 
 /*----medias query----*/
 @media only screen and (max-width: 800px) {
+  .textoPrincipal {
+    width: 380px;
+    font-size: 16px;
+    margin: 20px; }
   .espacioContacto {
     padding: 10%; }
   .mascotas {
@@ -253,11 +259,7 @@ footer {
     width: 450px;
     height: 200px; }
   #formulario1 {
-    margin: 30px; }
-  .carrusel .carousel {
-    width: 60%;
-    height: auto;
-    padding: 4%; } }
+    margin: 30px; } }
 
 @media only screen and (min-width: 1200px) {
   .principal {

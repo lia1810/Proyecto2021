@@ -24,13 +24,11 @@
     display: flex;
     justify-content: center;
     background-color: $fondoClaro;
-    position: relative;
-    top: 75px;
+    padding-top: 100px;
 
     .carousel {
         width: 500px;
         height: auto;
-        padding: 4%;
     }
 }
 
@@ -42,6 +40,7 @@ main {
     flex-wrap: wrap;
     overflow: hidden;
     background-color: $fondoClaro;
+    padding-top: 100px;
 
     .principal {
         color: $marronOscuro;
@@ -50,6 +49,7 @@ main {
         line-height: 1.5;
         display: flex;
         flex-direction: column;
+        align-items: center;
         flex-wrap: nowrap;
         font-size: $fuenteMedia;
 
@@ -80,13 +80,11 @@ main {
         .textoInterno {
             padding: 10px;
             text-align: justify;
-
         }
-
     }
 
     #adoptables {
-    
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -95,8 +93,6 @@ main {
             margin: 5px;
         }
     }
-
-
 }
 
 #team {
@@ -116,10 +112,15 @@ main {
         margin-bottom: 30px;
     }
 
+    .equipo {
+        justify-content: center;
+        align-items: center;
+    }
+
     .trabajadores {
-        width: 250px;
-        height: 250px;
-        background-size: auto 250px;
+        width: 320px;
+        height: 320px;
+        background-size: auto 320px;
         margin: 20px;
         border-radius: 50%;
         overflow: hidden;
@@ -142,20 +143,17 @@ main {
             visibility: hidden;
 
             h3 {
-            
                 font-size: 18px;
                 font-weight: 700;
                 margin-bottom: 1px;
             }
 
             p {
-              
                 font-style: italic;
                 font-size: 13px;
                 margin-top: 0px;
                 font-weight: 200;
             }
-
         }
     }
 
@@ -186,39 +184,6 @@ main {
         background-image: url(../img/persona4.jpg);
     }
 }
-
-// #venta {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-evenly;
-//     flex-wrap: wrap;
-
-//     img {
-//         width: 90%;
-//         height: auto;
-//     }
-
-//     .producto {
-//         width: 350px;
-//         background-color: white;
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-//         border: 1px solid rgb(102, 76, 76);
-
-
-//         &__titulo {
-//             color: red;
-//         }
-
-//         .producto__foto {
-//             width: 300px;
-//             height: 450px;
-//         }
-//     }
-// }
-
 
 /*----Legislacion---*/
 #linkALey {
@@ -255,18 +220,17 @@ main {
 .espacioContacto {
     background-color: $fondoClaro;
 
+    flex-wrap: wrap-reverse;
+
 
     .location {
         padding-top: 20px;
 
         iframe {
-            height: 150px;
-            padding: 10px;
             border: none;
             margin: 30px;
         }
     }
-
 
     form {
         .tipoDeMascota {
@@ -290,7 +254,7 @@ main {
 
         input[type=submit] {
             height: 35px;
-            background-color:rgb(32, 167, 32);
+            background-color: rgb(32, 167, 32);
             color: #fff;
             font-size: 14px;
             line-height: 14px;
@@ -363,21 +327,24 @@ footer {
 
 
 @media only screen and (max-width: 800px) {
+    .textoPrincipal {
+        width: 380px;
+        font-size: 16px;
+        margin: 20px;
+    }
 
-.espacioContacto{
-    padding: 10%;
-}
-.mascotas{
-    justify-content: center;
-    align-items: center;
-}
+    .espacioContacto {
+        padding: 10%;
+    }
+
+    .mascotas {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
 @media only screen and (min-width: 992px) {
-
-
-
 
     .principal {
         width: 60%;
@@ -414,21 +381,10 @@ footer {
         margin: 30px;
     }
 
-    .carrusel {
-        .carousel {
-            width: 60%;
-            height: auto;
-            padding: 4%;
-        }
-    }
-
 }
 
 
 @media only screen and (min-width: 1200px) {
-
-
-
 
     .principal {
 
@@ -443,18 +399,6 @@ footer {
         align-content: center;
         justify-content: space-around;
     }
-
-    // .espacioContacto {
-    //     display: flex;
-    //     flex-direction: row-reverse;
-    //     align-items: center;
-    //     justify-content: space-evenly;
-    // }
-
-    // .location iframe {
-    //     width: 450px;
-    //     height: 200px;
-    // }
 
     #formulario1 {
         margin: 30px;
