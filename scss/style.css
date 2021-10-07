@@ -24,12 +24,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #ece3d9;
-  padding-top: 100px;
+  padding-top: 120px;
 }
 
 .carrusel .carousel {
   width: 500px;
   height: auto;
+  padding-top: 10px;
 }
 
 /* Empieza MAIN  */
@@ -91,7 +92,7 @@ main .colaborando {
           justify-content: center;
   width: 380px;
   font-size: 14px;
-  margin-top: 30px;
+  margin-top: 100px;
   margin-bottom: 20px;
   background-color: rgba(39, 37, 37, 0.863);
   color: #fcdec0;
@@ -100,6 +101,12 @@ main .colaborando {
 main .colaborando .textoInterno {
   padding: 10px;
   text-align: justify;
+}
+
+main .denunciar {
+  width: 100%;
+  margin-top: 20px;
+  padding: 50px;
 }
 
 main #adoptables {
@@ -241,16 +248,19 @@ main #adoptables .card {
 }
 
 /*----Legislacion---*/
+.legal {
+  width: 100%;
+}
+
 #linkALey {
   font-size: 40px;
   text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  border: 1px solid;
   padding: 5px;
   margin-top: 10px;
-  width: 150px;
+  margin-bottom: 10px;
 }
 
 #linkALey p {
@@ -267,10 +277,6 @@ main #adoptables .card {
   color: #2144b8;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
-}
-
-#linkALey:hover {
-  background-color: #fff;
 }
 
 /* ---- Empieza Formulario Contacto----*/
@@ -405,6 +411,10 @@ footer .socialmedia .enlaces a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+  .video iframe {
+    width: 380px;
+    height: 214px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -418,6 +428,9 @@ footer .socialmedia .enlaces a:hover {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  .denunciar {
+    width: 80%;
   }
   #adoptables {
     display: -webkit-box;

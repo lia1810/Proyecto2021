@@ -23,8 +23,9 @@
 .carrusel {
     display: flex;
     justify-content: center;
-    background-color: $fondoClaro;
-    padding-top: 120px;
+    background-color: $fondoOscuro;
+    padding-top: 100px;
+    padding-bottom: 10px;
 
     .carousel {
         width: 500px;
@@ -74,7 +75,7 @@ main {
         justify-content: center;
         width: 380px;
         font-size: $fuenteChica;
-        margin-top: 100px;
+        margin-top: 50px;
         margin-bottom: 20px;
         background-color: $fondoOscuro;
         color: $colorPiel;
@@ -98,99 +99,127 @@ main {
         flex-direction: column;
         align-items: center;
 
+        h2 {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
         .card {
             margin: 5px;
         }
+    }
+
+
+}
+
+.fondoTarjeta {
+    padding-top: 80px;
+
+    .textoCondiciones {
+        padding-top: 50%;
+    }
+}
+
+#inquilinos {
+
+    background-image: url(../img/perro-gato.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    color: $colorPiel;
+    width: 100%;
+    height: calc(100vh - 110px);
+    text-align: justify;
+    overflow: auto;
+
+    article div {
+        width: 100%;
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 12px;
     }
 }
 
 #team {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 0px 40px 60px 40px;
     background-color: $fondoClaro;
 
-    h5 {
-        width: 40%;
+    .title {
         text-align: center;
-        color: black;
-        font-size: 15px;
+        color: $marronOscuro;
         margin-top: 5px;
         margin-bottom: 30px;
     }
 
-    .equipo {
-        justify-content: center;
-        align-items: center;
-    }
+    .workers {
+        justify-content: space-around;
 
-    .trabajadores {
-        width: 320px;
-        height: 320px;
-        background-size: auto 320px;
-        margin: 20px;
-        border-radius: 50%;
-        overflow: hidden;
-    }
 
-    .overlay {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: $colorPiel;
-        @include overlay;
+        .trabajadores {
+            width: 250px;
+            height: 250px;
+            background-size: auto 250px;
+            margin: 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            padding: 0;
+        }
 
-        .overlay-text {
-            transform: translateY(50px);
-            z-index: 999999;
-            transition: all 0.6s;
-            opacity: 0;
-            visibility: hidden;
+        .overlay {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: $violeta;
+            @include overlay;
 
-            h3 {
-                font-size: 18px;
-                font-weight: 700;
-                margin-bottom: 1px;
-            }
+            .overlay-text {
+                transform: translateY(50px);
+                z-index: 999999;
+                transition: all 0.6s;
+                opacity: 0;
+                visibility: hidden;
 
-            p {
-                font-style: italic;
-                font-size: 13px;
-                margin-top: 0px;
-                font-weight: 200;
+                h3 {
+                    margin-bottom: 1px;
+                }
+                p {
+                    font-style: italic;
+                }
             }
         }
-    }
 
-    .trabajadores:hover .overlay {
-        opacity: 1;
-        visibility: visible;
-    }
+        .trabajadores:hover .overlay {
+            opacity: 1;
+            visibility: visible;
+        }
 
-    .trabajadores:hover .overlay .overlay-text {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-    }
+        .trabajadores:hover .overlay .overlay-text {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
 
-    #persona1 {
-        background-image: url(../img/persona1.jpg);
-    }
+        #persona1 {
+            background-image: url(../img/persona1.jpg);
 
-    #persona2 {
-        background-image: url(../img/persona2.jpg);
-    }
+        }
 
-    #persona3 {
-        background-image: url(../img/persona3.jpg);
-    }
+        #persona2 {
+            background-image: url(../img/persona2.jpg);
+        }
 
-    #persona4 {
-        background-image: url(../img/persona4.jpg);
+        #persona3 {
+            background-image: url(../img/persona3.jpg);
+        }
+
+        #persona4 {
+            background-image: url(../img/persona4.jpg);
+        }
     }
 }
 
@@ -337,7 +366,7 @@ footer {
 
 @media only screen and (max-width: 800px) {
     .textoPrincipal {
-        width: 380px;
+
         font-size: 16px;
         margin: 20px;
     }
@@ -346,11 +375,16 @@ footer {
         padding: 10%;
     }
 
-    .mascotas {
-        justify-content: center;
-        align-items: center;
+    .video iframe {
+        width: 380px;
+        height: 214px;
     }
 
+    .textoCondiciones {
+        p {
+            font-size: 11px;
+        }
+    }
 }
 
 
