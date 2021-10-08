@@ -20,17 +20,16 @@
     }
 }
 
-.carrusel {
-    display: flex;
-    justify-content: center;
-    background-color: $fondoOscuro;
-    padding-top: 100px;
-    padding-bottom: 10px;
-
-    .carousel {
-        width: 500px;
-        height: auto;
-        padding-top: 10px;
+.presentacion{
+    width: 100%;
+    height: calc(100vh - 110px);
+    background: url(../img/1602011541.png) top center;
+    background-size: cover;
+    position: relative;
+    margin-top: 70px;
+    color:$colorPiel;
+    .titulo1{
+        margin-right: 20%;
     }
 }
 
@@ -42,29 +41,24 @@ main {
     flex-wrap: wrap;
     overflow: hidden;
     background-color: $fondoClaro;
-    padding-top: 100px;
 
     .principal {
         color: $marronOscuro;
-        padding: 20px;
+        padding: 10%;
         text-align: justify;
         line-height: 1.5;
         display: flex;
         flex-direction: column;
         align-items: center;
         flex-wrap: nowrap;
-        font-size: $fuenteMedia;
-
 
         ul {
             list-style: none;
-
         }
 
         .centrado {
             text-align: center;
             margin: 20px;
-
         }
     }
 
@@ -73,12 +67,15 @@ main {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 380px;
-        font-size: $fuenteChica;
-        margin-top: 50px;
-        margin-bottom: 20px;
+        padding: 5%;
         background-color: $fondoOscuro;
         color: $colorPiel;
+
+        img {
+            width: 350px;
+            height: auto;
+            padding-top: 30px;
+        }
 
         .textoInterno {
             padding: 10px;
@@ -98,6 +95,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 20px;
 
         h2 {
             text-align: center;
@@ -109,7 +107,9 @@ main {
         }
     }
 
-
+#venta{
+    padding-top: 150px;
+}
 }
 
 .fondoTarjeta {
@@ -144,7 +144,7 @@ main {
 
 #team {
     display: flex;
-    padding: 0px 40px 60px 40px;
+    padding: 40px 40px 60px 40px;
     background-color: $fondoClaro;
 
     .title {
@@ -187,6 +187,7 @@ main {
                 h3 {
                     margin-bottom: 1px;
                 }
+
                 p {
                     font-style: italic;
                 }
@@ -366,7 +367,6 @@ footer {
 
 @media only screen and (max-width: 800px) {
     .textoPrincipal {
-
         font-size: 16px;
         margin: 20px;
     }
@@ -384,6 +384,10 @@ footer {
         p {
             font-size: 11px;
         }
+    }
+    .carousel{
+        width: 80%;
+        margin-top: 10%;
     }
 }
 

@@ -10,16 +10,16 @@
     font-size: 30px;
     color: #faefef; }
 
-.carrusel {
-  display: flex;
-  justify-content: center;
-  background-color: rgba(39, 37, 37, 0.863);
-  padding-top: 100px;
-  padding-bottom: 10px; }
-  .carrusel .carousel {
-    width: 500px;
-    height: auto;
-    padding-top: 10px; }
+.presentacion {
+  width: 100%;
+  height: calc(100vh - 110px);
+  background: url(../img/1602011541.png) top center;
+  background-size: cover;
+  position: relative;
+  margin-top: 70px;
+  color: #fcdec0; }
+  .presentacion .titulo1 {
+    margin-right: 20%; }
 
 /* Empieza MAIN  */
 main {
@@ -27,18 +27,16 @@ main {
   justify-content: space-around;
   flex-wrap: wrap;
   overflow: hidden;
-  background-color: #ece3d9;
-  padding-top: 100px; }
+  background-color: #ece3d9; }
   main .principal {
     color: #472c1b;
-    padding: 20px;
+    padding: 10%;
     text-align: justify;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: nowrap;
-    font-size: 20px; }
+    flex-wrap: nowrap; }
     main .principal ul {
       list-style: none; }
     main .principal .centrado {
@@ -49,12 +47,13 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 380px;
-    font-size: 14px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    padding: 5%;
     background-color: rgba(39, 37, 37, 0.863);
     color: #fcdec0; }
+    main .colaborando img {
+      width: 350px;
+      height: auto;
+      padding-top: 30px; }
     main .colaborando .textoInterno {
       padding: 10px;
       text-align: justify; }
@@ -97,7 +96,7 @@ main {
 
 #team {
   display: flex;
-  padding: 0px 40px 60px 40px;
+  padding: 40px 40px 60px 40px;
   background-color: #ece3d9; }
   #team .title {
     text-align: center;
@@ -257,7 +256,10 @@ footer {
     width: 380px;
     height: 214px; }
   .textoCondiciones p {
-    font-size: 11px; } }
+    font-size: 11px; }
+  .carousel {
+    width: 80%;
+    margin-top: 10%; } }
 
 @media only screen and (min-width: 992px) {
   .principal {
