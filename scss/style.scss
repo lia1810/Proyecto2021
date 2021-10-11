@@ -20,21 +20,24 @@
     }
 }
 
-.presentacion{
+.presentacion {
     width: 100%;
     height: calc(100vh - 110px);
     background: url(../img/1602011541.png) top center;
     background-size: cover;
     position: relative;
     margin-top: 70px;
-    color:$colorPiel;
-    .titulo1{
+    color: $colorPiel;
+
+    .titulo1 {
         margin-right: 20%;
     }
 }
 
 
 /* Empieza MAIN  */
+
+
 main {
     display: flex;
     justify-content: space-around;
@@ -100,16 +103,19 @@ main {
         h2 {
             text-align: center;
             padding-bottom: 30px;
+            padding-top: 30px;
         }
-
+p{
+    margin-bottom: 0;
+}
         .card {
             margin: 5px;
         }
     }
 
-#venta{
-    padding-top: 150px;
-}
+    #venta {
+        padding-top: 150px;
+    }
 }
 
 .fondoTarjeta {
@@ -385,7 +391,8 @@ footer {
             font-size: 11px;
         }
     }
-    .carousel{
+
+    .carousel {
         width: 80%;
         margin-top: 10%;
     }
