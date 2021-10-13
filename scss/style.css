@@ -16,20 +16,18 @@
   color: #faefef;
 }
 
-.carrusel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #ece3d9;
-  padding-top: 100px;
+.presentacion {
+  width: 100%;
+  height: calc(100vh - 110px);
+  background: url(../img/1602011541.png) top center;
+  background-size: cover;
+  position: relative;
+  margin-top: 70px;
+  color: #fcdec0;
 }
 
-.carrusel .carousel {
-  width: 500px;
-  height: auto;
+.presentacion .titulo1 {
+  margin-right: 20%;
 }
 
 /* Empieza MAIN  */
@@ -43,12 +41,11 @@ main {
       flex-wrap: wrap;
   overflow: hidden;
   background-color: #ece3d9;
-  padding-top: 100px;
 }
 
 main .principal {
   color: #472c1b;
-  padding: 20px;
+  padding: 10%;
   text-align: justify;
   line-height: 1.5;
   display: -webkit-box;
@@ -63,7 +60,6 @@ main .principal {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  font-size: 20px;
 }
 
 main .principal ul {
@@ -89,17 +85,26 @@ main .colaborando {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 380px;
-  font-size: 14px;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  padding: 5%;
   background-color: rgba(39, 37, 37, 0.863);
   color: #fcdec0;
+}
+
+main .colaborando img {
+  width: 350px;
+  height: auto;
+  padding-top: 30px;
 }
 
 main .colaborando .textoInterno {
   padding: 10px;
   text-align: justify;
+}
+
+main .denunciar {
+  width: 100%;
+  margin-top: 20px;
+  padding: 50px;
 }
 
 main #adoptables {
@@ -113,58 +118,87 @@ main #adoptables {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 20px;
+}
+
+main #adoptables h2 {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+main #adoptables p {
+  margin-bottom: 0;
 }
 
 main #adoptables .card {
   margin: 5px;
 }
 
+main #venta {
+  padding-top: 150px;
+}
+
+.fondoTarjeta {
+  padding-top: 80px;
+}
+
+.fondoTarjeta .textoCondiciones {
+  padding-top: 50%;
+}
+
+#inquilinos {
+  background-image: url(../img/perro-gato.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  color: #fcdec0;
+  width: 100%;
+  height: calc(100vh - 110px);
+  text-align: justify;
+  overflow: auto;
+}
+
+#inquilinos article div {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 12px;
+}
+
 #team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0px 40px 60px 40px;
+  padding: 40px 40px 60px 40px;
   background-color: #ece3d9;
 }
 
-#team h5 {
-  width: 40%;
+#team .title {
   text-align: center;
-  color: black;
-  font-size: 15px;
+  color: #472c1b;
   margin-top: 5px;
   margin-bottom: 30px;
 }
 
-#team .equipo {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#team .workers {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-#team .trabajadores {
-  width: 320px;
-  height: 320px;
-  background-size: auto 320px;
+#team .workers .trabajadores {
+  width: 250px;
+  height: 250px;
+  background-size: auto 250px;
   margin: 20px;
   border-radius: 50%;
   overflow: hidden;
+  padding: 0;
 }
 
-#team .overlay {
+#team .workers .overlay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,9 +213,9 @@ main #adoptables .card {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  color: #fcdec0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 29, 199, 0.6)), to(rgba(26, 29, 199, 0.6)));
-  background: linear-gradient(rgba(26, 29, 199, 0.6), rgba(26, 29, 199, 0.6));
+  color: #49258e;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 218, 218, 0.815)), to(rgba(200, 170, 170, 0.849)));
+  background: linear-gradient(rgba(255, 218, 218, 0.815), rgba(200, 170, 170, 0.849));
   overflow: hidden;
   opacity: 0;
   visibility: hidden;
@@ -189,7 +223,7 @@ main #adoptables .card {
   height: 100%;
 }
 
-#team .overlay .overlay-text {
+#team .workers .overlay .overlay-text {
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
   z-index: 999999;
@@ -199,58 +233,56 @@ main #adoptables .card {
   visibility: hidden;
 }
 
-#team .overlay .overlay-text h3 {
-  font-size: 18px;
-  font-weight: 700;
+#team .workers .overlay .overlay-text h3 {
   margin-bottom: 1px;
 }
 
-#team .overlay .overlay-text p {
+#team .workers .overlay .overlay-text p {
   font-style: italic;
-  font-size: 13px;
-  margin-top: 0px;
-  font-weight: 200;
 }
 
-#team .trabajadores:hover .overlay {
+#team .workers .trabajadores:hover .overlay {
   opacity: 1;
   visibility: visible;
 }
 
-#team .trabajadores:hover .overlay .overlay-text {
+#team .workers .trabajadores:hover .overlay .overlay-text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
   visibility: visible;
 }
 
-#team #persona1 {
+#team .workers #persona1 {
   background-image: url(../img/persona1.jpg);
 }
 
-#team #persona2 {
+#team .workers #persona2 {
   background-image: url(../img/persona2.jpg);
 }
 
-#team #persona3 {
+#team .workers #persona3 {
   background-image: url(../img/persona3.jpg);
 }
 
-#team #persona4 {
+#team .workers #persona4 {
   background-image: url(../img/persona4.jpg);
 }
 
 /*----Legislacion---*/
+.legal {
+  width: 100%;
+}
+
 #linkALey {
   font-size: 40px;
   text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  border: 1px solid;
   padding: 5px;
   margin-top: 10px;
-  width: 150px;
+  margin-bottom: 10px;
 }
 
 #linkALey p {
@@ -267,10 +299,6 @@ main #adoptables .card {
   color: #2144b8;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
-}
-
-#linkALey:hover {
-  background-color: #fff;
 }
 
 /* ---- Empieza Formulario Contacto----*/
@@ -390,20 +418,22 @@ footer .socialmedia .enlaces a:hover {
 /*----medias query----*/
 @media only screen and (max-width: 800px) {
   .textoPrincipal {
-    width: 380px;
     font-size: 16px;
     margin: 20px;
   }
   .espacioContacto {
     padding: 10%;
   }
-  .mascotas {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .video iframe {
+    width: 380px;
+    height: 214px;
+  }
+  .textoCondiciones p {
+    font-size: 11px;
+  }
+  .carousel {
+    width: 80%;
+    margin-top: 10%;
   }
 }
 
@@ -418,6 +448,9 @@ footer .socialmedia .enlaces a:hover {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  .denunciar {
+    width: 80%;
   }
   #adoptables {
     display: -webkit-box;

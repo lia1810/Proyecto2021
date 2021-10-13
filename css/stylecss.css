@@ -10,15 +10,16 @@
     font-size: 30px;
     color: #faefef; }
 
-.carrusel {
-  display: flex;
-  justify-content: center;
-  background-color: #ece3d9;
-  padding-top: 120px; }
-  .carrusel .carousel {
-    width: 500px;
-    height: auto;
-    padding-top: 10px; }
+.presentacion {
+  width: 100%;
+  height: calc(100vh - 110px);
+  background: url(../img/1602011541.png) top center;
+  background-size: cover;
+  position: relative;
+  margin-top: 70px;
+  color: #fcdec0; }
+  .presentacion .titulo1 {
+    margin-right: 20%; }
 
 /* Empieza MAIN  */
 main {
@@ -26,18 +27,17 @@ main {
   justify-content: space-around;
   flex-wrap: wrap;
   overflow: hidden;
-  background-color: #ece3d9;
-  padding-top: 100px; }
+  background-color: #ece3d9; }
+  main h2 {
+    margin-top: 30px; }
   main .principal {
     color: #472c1b;
-    padding: 20px;
+    padding: 10%;
     text-align: justify;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
-    font-size: 20px; }
+    flex-wrap: nowrap; }
     main .principal ul {
       list-style: none; }
     main .principal .centrado {
@@ -48,93 +48,116 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 380px;
-    font-size: 14px;
-    margin-top: 100px;
-    margin-bottom: 20px;
+    padding: 5%;
     background-color: rgba(39, 37, 37, 0.863);
     color: #fcdec0; }
+    main .colaborando img {
+      width: 350px;
+      height: auto;
+      padding-top: 30px; }
     main .colaborando .textoInterno {
       padding: 10px;
       text-align: justify; }
   main .denunciar {
     width: 100%;
-    margin-top: 20px;
+    margin: 30px;
     padding: 50px; }
   main #adoptables {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-top: 20px; }
+    main #adoptables h2 {
+      text-align: center;
+      padding-bottom: 30px;
+      padding-top: 30px; }
+    main #adoptables p {
+      margin: 0; }
     main #adoptables .card {
       margin: 5px; }
+  main #venta {
+    padding-top: 150px; }
+
+.fondoTarjeta {
+  padding-top: 80px; }
+  .fondoTarjeta .textoCondiciones {
+    padding-top: 50%; }
+
+#inquilinos {
+  background-image: url(../img/perro-gato.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  color: #fcdec0;
+  width: 100%;
+  height: calc(100vh - 110px);
+  text-align: justify;
+  overflow: auto; }
+  #inquilinos article div {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 12px; }
 
 #team {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 40px 60px 40px;
+  padding: 40px 40px 60px 40px;
   background-color: #ece3d9; }
-  #team h5 {
-    width: 40%;
+  #team .title {
     text-align: center;
-    color: black;
-    font-size: 15px;
+    color: #472c1b;
     margin-top: 5px;
     margin-bottom: 30px; }
-  #team .equipo {
-    justify-content: center;
-    align-items: center; }
-  #team .trabajadores {
-    width: 320px;
-    height: 320px;
-    background-size: auto 320px;
-    margin: 20px;
-    border-radius: 50%;
-    overflow: hidden; }
-  #team .overlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fcdec0;
-    background: linear-gradient(rgba(26, 29, 199, 0.6), rgba(26, 29, 199, 0.6));
-    overflow: hidden;
-    opacity: 0;
-    visibility: hidden;
-    width: 100%;
-    height: 100%; }
-    #team .overlay .overlay-text {
-      transform: translateY(50px);
-      z-index: 999999;
-      transition: all 0.6s;
+  #team .workers {
+    justify-content: space-around; }
+    #team .workers .trabajadores {
+      width: 250px;
+      height: 250px;
+      background-size: auto 250px;
+      margin: 20px;
+      border-radius: 50%;
+      overflow: hidden;
+      padding: 0; }
+    #team .workers .overlay {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #49258e;
+      background: linear-gradient(rgba(255, 218, 218, 0.815), rgba(200, 170, 170, 0.849));
+      overflow: hidden;
       opacity: 0;
-      visibility: hidden; }
-      #team .overlay .overlay-text h3 {
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 1px; }
-      #team .overlay .overlay-text p {
-        font-style: italic;
-        font-size: 13px;
-        margin-top: 0px;
-        font-weight: 200; }
-  #team .trabajadores:hover .overlay {
-    opacity: 1;
-    visibility: visible; }
-  #team .trabajadores:hover .overlay .overlay-text {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible; }
-  #team #persona1 {
-    background-image: url(../img/persona1.jpg); }
-  #team #persona2 {
-    background-image: url(../img/persona2.jpg); }
-  #team #persona3 {
-    background-image: url(../img/persona3.jpg); }
-  #team #persona4 {
-    background-image: url(../img/persona4.jpg); }
+      visibility: hidden;
+      width: 100%;
+      height: 100%; }
+      #team .workers .overlay .overlay-text {
+        transform: translateY(50px);
+        z-index: 999999;
+        transition: all 0.6s;
+        opacity: 0;
+        visibility: hidden; }
+        #team .workers .overlay .overlay-text h3 {
+          margin-bottom: 1px; }
+        #team .workers .overlay .overlay-text p {
+          font-style: italic; }
+    #team .workers .trabajadores:hover .overlay {
+      opacity: 1;
+      visibility: visible; }
+    #team .workers .trabajadores:hover .overlay .overlay-text {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible; }
+    #team .workers #persona1 {
+      background-image: url(../img/persona1.jpg); }
+    #team .workers #persona2 {
+      background-image: url(../img/persona2.jpg); }
+    #team .workers #persona3 {
+      background-image: url(../img/persona3.jpg); }
+    #team .workers #persona4 {
+      background-image: url(../img/persona4.jpg); }
 
 /*----Legislacion---*/
 .legal {
@@ -232,14 +255,18 @@ footer {
 /*----medias query----*/
 @media only screen and (max-width: 800px) {
   .textoPrincipal {
-    width: 380px;
     font-size: 16px;
     margin: 20px; }
   .espacioContacto {
     padding: 10%; }
-  .mascotas {
-    justify-content: center;
-    align-items: center; } }
+  .video iframe {
+    width: 380px;
+    height: 214px; }
+  .textoCondiciones p {
+    font-size: 11px; }
+  .carousel {
+    width: 80%;
+    margin-top: 10%; } }
 
 @media only screen and (min-width: 992px) {
   .principal {
