@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Refugio Valor Animal" content="Mascotas en adopción responsable">
+    <meta name="keywords" content="Gatos, Perros, mascotas,adopción">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -12,56 +14,93 @@
     <link rel="stylesheet" href="../css/stylecss.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <title>Mascotas adoptables</title>
+    <title>Mascotas en adopción</title>
 </head>
 
 <body>
-        <header>
-                <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
-                    <a class="navbar-brand" href="../index.html">
-        
-                        <div class="logoNombre"> <img id="patita" src="../img/patitaEditada.png" alt="">
-        
-                            <h1>Valor Animal</h1>
-                        </div>
-        
-        
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="contacto.htmlcollapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="legales.html">Legislación</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="productos.html">Productos Solidarios</a>
-                            <li class="nav-item">
-                                <a class="nav-link" href="aboutus.html">Quienes somos</a>
-                        </ul>
-                    </div>
-                </nav>
-          
-            </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+            <a class="navbar-brand" href="../index.html">
+                <div class="logoNombre"> <img id="patita" src="../img/logo-prueba.png" alt="logo">
+                    <h1>Valor Animal</h1>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+
+                    <a class="nav-link" href="adoptables.html">En adopción</a>
+
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+
+                    <a class="nav-link" href="legales.html">Legislación</a>
+
+                    <a class="nav-link" href="productos.html">Productos Solidarios</a>
+
+                    <a class="nav-link" href="aboutus.html">Quienes somos</a>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <div class="card bg-dark text-white fondoTarjeta">
+        <img src="../img/perro-gato.jpg" class="card-img" alt="cachorros">
+        <div class="card-img-overlay textoCondiciones">
+            <h5 class="card-title">Condiciones para adoptar</h5>
+            <p class="card-text">Todos nuestras mascotas se entregan vacunadas y desparasitadas.</p>
+            <p class="card-text">Nos gustaría que seguir en contacto para poder disfrutar de su nueva vida.</p>
+        </div>
+    </div>
 
     <main>
 
         <section id="adoptables">
             <div class="container">
-                <div class="row mascotas">
+                <div class="row">
+                    <h2>Nuestros inquilinos</h2>
+                    <div class="col-sm-12 col-md-4 mascotas">
+                        <div class="card">
+                            <img src="../img/perri.jpg" class="card-img-top" alt="perrito">
+                            <div class="card-body">
+                                <h5 class="card-title">Galeano</h5>
+                                <p class="card-text">Friolento,  juguetón y mimoso. Te está esperando.</p>
+                                <a href="contacto.html" class="btn btn-success btn-sm">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 mascotas">
+                        <div class="card">
+                            <img src="../img/cachorro1.jpg" class="card-img-top" alt="perrito">
+                            <div class="card-body">
+                                <h5 class="card-title">Lopez</h5>
+                                <p class="card-text">Un sobreviviente. Necesita espacio y paciencia.</p>
+                                <a href="contacto.html" class="btn btn-success btn-sm">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 mascotas">
+                        <div class="card">
+                            <img src="../img/cachorro2.jpg" class="card-img-top" alt="perrito">
+                            <div class="card-body">
+                                <h5 class="card-title">Dior</h5>
+                                <p class="card-text">Le encantan los paseos y las golosinas. Irresistible.</p>
+                                <a href="contacto.html" class="btn btn-success btn-sm">Más información</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-sm-12 col-md-4 mascotas">
                         <div class="card">
                             <img src="../img/gatito negro.jpg" class="card-img-top" alt="gatito">
                             <div class="card-body">
                                 <h5 class="card-title">Mustafá</h5>
-                                <p class="card-text">Morocho de unos 2 meses, muy mimoso</p>
+                                <p class="card-text">Morocho de unos 2 meses, muy mimoso.Esa carita.</p>
                                 <a href="contacto.html" class="btn btn-success btn-sm">Más información</a>
                             </div>
                         </div>
@@ -71,7 +110,7 @@
                             <img src="../img/gato2.jpg" class="card-img-top" alt="gatito">
                             <div class="card-body">
                                 <h5 class="card-title">Lucrecia</h5>
-                                <p class="card-text">La más juguetona del refugio, siempre alerta</p>
+                                <p class="card-text">La más juguetona del refugio, siempre alerta y preparada.</p>
                                 <a href="contacto.html" class="btn btn-success btn-sm">Más información</a>
                             </div>
                         </div>
@@ -81,47 +120,48 @@
                             <img src="../img/callejero3.jpg" class="card-img-top" alt="gatito">
                             <div class="card-body">
                                 <h5 class="card-title">Moyano</h5>
-                                <p class="card-text">Viejito adorable, mucha calle y rock&roll</p>
+                                <p class="card-text">Viejito adorable, mucha calle y rock&roll. Necesita patio cerrado.</p>
                                 <a href="contacto.html" class="btn btn-success btn-sm">Más información</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4 mascotas">
-                            <div class="card">
-                                <img src="../img/perrotoalla.jpg" class="card-img-top" alt="gatito">
-                                <div class="card-body">
-                                    <h5 class="card-title">Fulanito</h5>
-                                    <p class="card-text">Morocho de unos 2 meses, muy mimoso</p>
-                                    <a href="contacto.html" class="btn btn-success btn-sm">Más información</a>
-                                </div>
+                        <div class="card">
+                            <img src="../img/cachorro3.jpg" class="card-img-top" alt="gatito">
+                            <div class="card-body">
+                                <h5 class="card-title">Fulanito</h5>
+                                <p class="card-text">El más chiquito de la camada. Le gusta dormir abrigado.</p>
+                                <a href="contacto.html" class="btn btn-success btn-sm">Más información</a>
                             </div>
-                        </div>  <div class="col-sm-12 col-md-4 mascotas">
-                                <div class="card">
-                                    <img src="../img/gatoloco.jpg" class="card-img-top" alt="gatito">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Milanesa</h5>
-                                        <p class="card-text">Morocho de unos 2 meses, muy mimoso</p>
-                                        <a href="contacto.html" class="btn btn-success btn-sm">Más información</a>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                    </div>
                     <div class="col-sm-12 col-md-4 mascotas">
                         <div class="card">
-                            <img src="../img/perro2.jpg" class="card-img-top" alt="gatito">
+                            <img src="../img/gatoDucha2.jpg" class="card-img-top" alt="gatito">
                             <div class="card-body">
-                                <h5 class="card-title">Galeano</h5>
-                                <p class="card-text">Friolento y juguetón. Te está esperando</p>
+                                <h5 class="card-title">Milanesa</h5>
+                                <p class="card-text">Muuuuuy bueno. Le encanta bañarse, aunque disimule.</p>
+                                <a href="contacto.html" class="btn btn-success btn-sm">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 mascotas">
+                        <div class="card">
+                            <img src="../img/gatitoenadopcion.jpg" class="card-img-top" alt="gatito">
+                            <div class="card-body">
+                                <h5 class="card-title">Borges</h5>
+                                <p class="card-text">Muy simpático y juguetón. Ronronea como ninguno.</p>
                                 <a href="contacto.html" class="btn btn-success btn-sm">Más información</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            </section>
+        </section>
     </main>
 
 
-    <footer class="pieInicio">
+    <footer >
         <div class="socialmedia">
             <div class="enlaces">
                 <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -133,9 +173,16 @@
     </footer>
 
     <div id="wa"><a href="https://www.whatsapp.com/?lang=es"><img src="../img/whatsapp2.png"></a></div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
