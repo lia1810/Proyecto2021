@@ -43,6 +43,10 @@ main {
   background-color: #ece3d9;
 }
 
+main h2 {
+  margin-top: 30px;
+}
+
 main .principal {
   color: #472c1b;
   padding: 10%;
@@ -55,9 +59,6 @@ main .principal {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
@@ -103,7 +104,7 @@ main .colaborando .textoInterno {
 
 main .denunciar {
   width: 100%;
-  margin-top: 20px;
+  margin: 30px;
   padding: 50px;
 }
 
@@ -128,7 +129,7 @@ main #adoptables h2 {
 }
 
 main #adoptables p {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 main #adoptables .card {
@@ -141,6 +142,10 @@ main #venta {
 
 .fondoTarjeta {
   padding-top: 80px;
+}
+
+.fondoTarjeta p {
+  margin: 0;
 }
 
 .fondoTarjeta .textoCondiciones {
@@ -272,6 +277,9 @@ main #venta {
 /*----Legislacion---*/
 .legal {
   width: 100%;
+  box-shadow: 9px 8px 32px -5px rgba(41, 31, 24, 0.75);
+  -webkit-box-shadow: 9px 8px 32px -5px rgba(41, 31, 24, 0.75);
+  -moz-box-shadow: 9px 8px 32px -5px rgba(41, 31, 24, 0.75);
 }
 
 #linkALey {
@@ -286,7 +294,8 @@ main #venta {
 }
 
 #linkALey p {
-  font-size: 20px;
+  font-size: 12px;
+  margin: 0;
 }
 
 #linkALey a {

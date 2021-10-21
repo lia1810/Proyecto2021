@@ -80,6 +80,8 @@ main {
 
 .fondoTarjeta {
   padding-top: 80px; }
+  .fondoTarjeta p {
+    margin: 0; }
   .fondoTarjeta .textoCondiciones {
     padding-top: 50%; }
 

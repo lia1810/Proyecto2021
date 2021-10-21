@@ -126,6 +126,10 @@ main {
 .fondoTarjeta {
     padding-top: 80px;
 
+    p {
+        margin: 0;
+    }
+
     .textoCondiciones {
         padding-top: 50%;
     }
@@ -238,6 +242,9 @@ main {
 /*----Legislacion---*/
 .legal {
     width: 100%;
+    box-shadow: 9px 8px 32px -5px rgba(41, 31, 24, 0.75);
+    -webkit-box-shadow: 9px 8px 32px -5px rgba(41, 31, 24, 0.75);
+    -moz-box-shadow: 9px 8px 32px -5px rgba(41, 31, 24, 0.75);
 }
 
 #linkALey {
@@ -249,7 +256,8 @@ main {
     margin-bottom: 10px;
 
     p {
-        font-size: 20px;
+        font-size: 12px;
+        margin: 0;
     }
 
     a {
