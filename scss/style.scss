@@ -108,13 +108,25 @@ main {
             padding-bottom: 30px;
             padding-top: 30px;
         }
-
+h3{
+    text-align: center;
+}
         p {
             margin: 0;
         }
 
         .card {
             margin: 5px;
+            .btn-success{
+                background-color: rgb(53, 53, 202);
+                border-color:rgb(53, 53, 202) ;
+            }
+        }
+        .title {
+            text-align: center;
+            color: $marronOscuro;
+            margin-top: 5px;
+            margin-bottom: 30px;
         }
     }
 
@@ -155,6 +167,7 @@ main {
         margin-left: auto;
         font-size: 12px;
     }
+    
 }
 
 #team {
@@ -242,18 +255,20 @@ main {
 /*----Legislacion---*/
 .legal {
     width: 100%;
+background-color: $marronOscuro;
+}
+.video{
     box-shadow: 9px 8px 32px -5px rgba(41, 31, 24, 0.75);
     -webkit-box-shadow: 9px 8px 32px -5px rgba(41, 31, 24, 0.75);
     -moz-box-shadow: 9px 8px 32px -5px rgba(41, 31, 24, 0.75);
 }
-
 #linkALey {
     font-size: 40px;
     text-align: center;
     align-self: center;
     padding: 5px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
     p {
         font-size: 12px;
@@ -262,7 +277,7 @@ main {
 
     a {
         text-decoration-line: none;
-        color: $marronOscuro;
+        color: $colorPiel;
     }
 
     a:hover {
@@ -334,6 +349,8 @@ main {
 }
 
 /* ---- Termina Formulario Contacto----*/
+
+
 /* ---Empieza FOOTER ---*/
 
 footer {

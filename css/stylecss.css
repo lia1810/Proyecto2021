@@ -71,10 +71,20 @@ main {
       text-align: center;
       padding-bottom: 30px;
       padding-top: 30px; }
+    main #adoptables h3 {
+      text-align: center; }
     main #adoptables p {
       margin: 0; }
     main #adoptables .card {
       margin: 5px; }
+      main #adoptables .card .btn-success {
+        background-color: #3535ca;
+        border-color: #3535ca; }
+    main #adoptables .title {
+      text-align: center;
+      color: #472c1b;
+      margin-top: 5px;
+      margin-bottom: 30px; }
   main #venta {
     padding-top: 150px; }
 
@@ -163,7 +173,13 @@ main {
 
 /*----Legislacion---*/
 .legal {
-  width: 100%; }
+  width: 100%;
+  background-color: #472c1b; }
+
+.video {
+  box-shadow: 9px 8px 32px -5px rgba(41, 31, 24, 0.75);
+  -webkit-box-shadow: 9px 8px 32px -5px rgba(41, 31, 24, 0.75);
+  -moz-box-shadow: 9px 8px 32px -5px rgba(41, 31, 24, 0.75); }
 
 #linkALey {
   font-size: 40px;
@@ -171,14 +187,15 @@ main {
   align-self: center;
   padding: 5px;
   margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
   #linkALey p {
-    font-size: 20px; }
+    font-size: 12px;
+    margin: 0; }
   #linkALey a {
     text-decoration-line: none;
-    color: #472c1b; }
+    color: #fcdec0; }
   #linkALey a:hover {
-    color: #2144b8;
+    color: #597cf0;
     transform: scale(1.1, 1.1); }
 
 /* ---- Empieza Formulario Contacto----*/
@@ -217,7 +234,7 @@ main {
     position: relative;
     bottom: 8px; }
   .espacioContacto form input[type=submit]:hover {
-    background-color: #2144b8; }
+    background-color: #597cf0; }
 
 /* ---- Termina Formulario Contacto----*/
 /* ---Empieza FOOTER ---*/
@@ -245,7 +262,7 @@ footer {
         color: #472c1b;
         transition: .5s; }
       footer .socialmedia .enlaces a:hover {
-        color: #2144b8; }
+        color: #597cf0; }
 
 /* ---Termina FOOTER ---*/
 /*---Whatsapp---*/
