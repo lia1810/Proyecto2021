@@ -49,7 +49,7 @@ main h2 {
 
 main .principal {
   color: #472c1b;
-  padding: 10%;
+  padding: 3%;
   text-align: justify;
   line-height: 1.5;
   display: -webkit-box;
@@ -86,7 +86,7 @@ main .colaborando {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 5%;
+  padding: 3%;
   background-color: rgba(39, 37, 37, 0.863);
   color: #fcdec0;
 }
@@ -128,6 +128,10 @@ main #adoptables h2 {
   padding-top: 30px;
 }
 
+main #adoptables h3 {
+  text-align: center;
+}
+
 main #adoptables p {
   margin: 0;
 }
@@ -136,20 +140,39 @@ main #adoptables .card {
   margin: 5px;
 }
 
+main #adoptables .card .btn-success {
+  background-color: #3535ca;
+  border-color: #3535ca;
+}
+
+main #adoptables .title {
+  text-align: center;
+  color: #472c1b;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
 main #venta {
   padding-top: 150px;
 }
 
 .fondoTarjeta {
   padding-top: 80px;
+  border: none;
 }
 
 .fondoTarjeta p {
   margin: 0;
 }
 
+.fondoTarjeta .textoProductos {
+  padding-top: 100px;
+  color: black;
+  text-align: center;
+}
+
 .fondoTarjeta .textoCondiciones {
-  padding-top: 50%;
+  padding-top: 40%;
 }
 
 #inquilinos {
@@ -277,6 +300,10 @@ main #venta {
 /*----Legislacion---*/
 .legal {
   width: 100%;
+  background-color: #472c1b;
+}
+
+.video {
   box-shadow: 9px 8px 32px -5px rgba(41, 31, 24, 0.75);
   -webkit-box-shadow: 9px 8px 32px -5px rgba(41, 31, 24, 0.75);
   -moz-box-shadow: 9px 8px 32px -5px rgba(41, 31, 24, 0.75);
@@ -290,7 +317,7 @@ main #venta {
       align-self: center;
   padding: 5px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #linkALey p {
@@ -301,11 +328,11 @@ main #venta {
 #linkALey a {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
-  color: #472c1b;
+  color: #fcdec0;
 }
 
 #linkALey a:hover {
-  color: #2144b8;
+  color: #597cf0;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
 }
@@ -326,17 +353,21 @@ main #venta {
   margin: 30px;
 }
 
-.espacioContacto form .tipoDeMascota {
+.espacioContacto #formulario1 {
+  padding-top: 20px;
+}
+
+.espacioContacto #formulario1 .tipoDeMascota {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.espacioContacto form .tipoDeMascota fieldset {
+.espacioContacto #formulario1 .tipoDeMascota fieldset {
   padding: 10px 30px 10px 0;
 }
 
-.espacioContacto form .envio {
+.espacioContacto #formulario1 .envio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,13 +375,13 @@ main #venta {
       justify-content: space-around;
 }
 
-.espacioContacto form .especie {
+.espacioContacto #formulario1 .especie {
   width: 80px;
   height: 25px;
   font-family: 'Montserrat', sans-serif;
 }
 
-.espacioContacto form input[type=submit] {
+.espacioContacto #formulario1 input[type=submit] {
   height: 35px;
   background-color: #20a720;
   color: #fff;
@@ -367,8 +398,8 @@ main #venta {
   bottom: 8px;
 }
 
-.espacioContacto form input[type=submit]:hover {
-  background-color: #2144b8;
+.espacioContacto #formulario1 input[type=submit]:hover {
+  background-color: #597cf0;
 }
 
 /* ---- Termina Formulario Contacto----*/
@@ -413,7 +444,7 @@ footer .socialmedia .enlaces a {
 }
 
 footer .socialmedia .enlaces a:hover {
-  color: #2144b8;
+  color: #597cf0;
 }
 
 /* ---Termina FOOTER ---*/
@@ -427,7 +458,7 @@ footer .socialmedia .enlaces a:hover {
 /*----medias query----*/
 @media only screen and (max-width: 800px) {
   .textoPrincipal {
-    font-size: 16px;
+    font-size: 14px;
     margin: 20px;
   }
   .espacioContacto {
@@ -437,12 +468,9 @@ footer .socialmedia .enlaces a:hover {
     width: 380px;
     height: 214px;
   }
-  .textoCondiciones p {
-    font-size: 11px;
-  }
-  .carousel {
-    width: 80%;
-    margin-top: 10%;
+  .textoProductos {
+    padding-left: 0;
+    padding-top: 30%;
   }
 }
 
@@ -492,30 +520,6 @@ footer .socialmedia .enlaces a:hover {
   .location iframe {
     width: 450px;
     height: 200px;
-  }
-  #formulario1 {
-    margin: 30px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .principal {
-    padding: 50px;
-    line-height: 1.5;
-    font-size: 18px;
-  }
-  #adoptables {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
   #formulario1 {
     margin: 30px;

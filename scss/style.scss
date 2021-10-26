@@ -51,7 +51,7 @@ main {
 
     .principal {
         color: $marronOscuro;
-        padding: 10%;
+        padding: 3%;
         text-align: justify;
         line-height: 1.5;
         display: flex;
@@ -73,7 +73,7 @@ main {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 5%;
+        padding: 3%;
         background-color: $fondoOscuro;
         color: $colorPiel;
 
@@ -108,20 +108,24 @@ main {
             padding-bottom: 30px;
             padding-top: 30px;
         }
-h3{
-    text-align: center;
-}
+
+        h3 {
+            text-align: center;
+        }
+
         p {
             margin: 0;
         }
 
         .card {
             margin: 5px;
-            .btn-success{
+
+            .btn-success {
                 background-color: rgb(53, 53, 202);
-                border-color:rgb(53, 53, 202) ;
+                border-color: rgb(53, 53, 202);
             }
         }
+
         .title {
             text-align: center;
             color: $marronOscuro;
@@ -137,13 +141,20 @@ h3{
 
 .fondoTarjeta {
     padding-top: 80px;
+    border: none;
 
     p {
         margin: 0;
     }
 
+    .textoProductos {
+        padding-top: 100px;
+        color: black;
+        text-align: center;
+    }
+
     .textoCondiciones {
-        padding-top: 50%;
+        padding-top: 40%;
     }
 }
 
@@ -167,7 +178,7 @@ h3{
         margin-left: auto;
         font-size: 12px;
     }
-    
+
 }
 
 #team {
@@ -255,13 +266,15 @@ h3{
 /*----Legislacion---*/
 .legal {
     width: 100%;
-background-color: $marronOscuro;
+    background-color: $marronOscuro;
 }
-.video{
+
+.video {
     box-shadow: 9px 8px 32px -5px rgba(41, 31, 24, 0.75);
     -webkit-box-shadow: 9px 8px 32px -5px rgba(41, 31, 24, 0.75);
     -moz-box-shadow: 9px 8px 32px -5px rgba(41, 31, 24, 0.75);
 }
+
 #linkALey {
     font-size: 40px;
     text-align: center;
@@ -292,10 +305,7 @@ background-color: $marronOscuro;
 
 .espacioContacto {
     background-color: $fondoClaro;
-
     flex-wrap: wrap-reverse;
-
-
     .location {
         padding-top: 20px;
 
@@ -305,7 +315,8 @@ background-color: $marronOscuro;
         }
     }
 
-    form {
+    #formulario1 {
+        padding-top: 20px;
         .tipoDeMascota {
             display: flex;
 
@@ -403,7 +414,7 @@ footer {
 
 @media only screen and (max-width: 800px) {
     .textoPrincipal {
-        font-size: 16px;
+        font-size: 14px;
         margin: 20px;
     }
 
@@ -416,15 +427,9 @@ footer {
         height: 214px;
     }
 
-    .textoCondiciones {
-        p {
-            font-size: 11px;
-        }
-    }
-
-    .carousel {
-        width: 80%;
-        margin-top: 10%;
+    .textoProductos {
+        padding-left: 0;
+        padding-top: 30%;
     }
 }
 
@@ -451,7 +456,6 @@ footer {
         flex-direction: row;
         align-content: center;
         justify-content: space-around;
-
     }
 
     .espacioContacto {
@@ -470,26 +474,4 @@ footer {
         margin: 30px;
     }
 
-}
-
-
-@media only screen and (min-width: 1200px) {
-
-    .principal {
-
-        padding: 50px;
-        line-height: 1.5;
-        font-size: 18px;
-    }
-
-    #adoptables {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: space-around;
-    }
-
-    #formulario1 {
-        margin: 30px;
-    }
 }

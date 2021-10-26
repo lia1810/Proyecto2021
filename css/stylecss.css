@@ -32,7 +32,7 @@ main {
     margin-top: 30px; }
   main .principal {
     color: #472c1b;
-    padding: 10%;
+    padding: 3%;
     text-align: justify;
     line-height: 1.5;
     display: flex;
@@ -48,7 +48,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5%;
+    padding: 3%;
     background-color: rgba(39, 37, 37, 0.863);
     color: #fcdec0; }
     main .colaborando img {
@@ -89,11 +89,16 @@ main {
     padding-top: 150px; }
 
 .fondoTarjeta {
-  padding-top: 80px; }
+  padding-top: 80px;
+  border: none; }
   .fondoTarjeta p {
     margin: 0; }
+  .fondoTarjeta .textoProductos {
+    padding-top: 100px;
+    color: black;
+    text-align: center; }
   .fondoTarjeta .textoCondiciones {
-    padding-top: 50%; }
+    padding-top: 40%; }
 
 #inquilinos {
   background-image: url(../img/perro-gato.jpg);
@@ -207,34 +212,36 @@ main {
     .espacioContacto .location iframe {
       border: none;
       margin: 30px; }
-  .espacioContacto form .tipoDeMascota {
-    display: flex; }
-    .espacioContacto form .tipoDeMascota fieldset {
-      padding: 10px 30px 10px 0; }
-  .espacioContacto form .envio {
-    display: flex;
-    justify-content: space-around; }
-  .espacioContacto form .especie {
-    width: 80px;
-    height: 25px;
-    font-family: 'Montserrat', sans-serif; }
-  .espacioContacto form input[type=submit] {
-    height: 35px;
-    background-color: #20a720;
-    color: #fff;
-    font-size: 14px;
-    line-height: 14px;
-    border-radius: 20px;
-    padding: 5px 20px;
-    border: none;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    cursor: pointer;
-    margin-right: 20px;
-    position: relative;
-    bottom: 8px; }
-  .espacioContacto form input[type=submit]:hover {
-    background-color: #597cf0; }
+  .espacioContacto #formulario1 {
+    padding-top: 20px; }
+    .espacioContacto #formulario1 .tipoDeMascota {
+      display: flex; }
+      .espacioContacto #formulario1 .tipoDeMascota fieldset {
+        padding: 10px 30px 10px 0; }
+    .espacioContacto #formulario1 .envio {
+      display: flex;
+      justify-content: space-around; }
+    .espacioContacto #formulario1 .especie {
+      width: 80px;
+      height: 25px;
+      font-family: 'Montserrat', sans-serif; }
+    .espacioContacto #formulario1 input[type=submit] {
+      height: 35px;
+      background-color: #20a720;
+      color: #fff;
+      font-size: 14px;
+      line-height: 14px;
+      border-radius: 20px;
+      padding: 5px 20px;
+      border: none;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      cursor: pointer;
+      margin-right: 20px;
+      position: relative;
+      bottom: 8px; }
+    .espacioContacto #formulario1 input[type=submit]:hover {
+      background-color: #597cf0; }
 
 /* ---- Termina Formulario Contacto----*/
 /* ---Empieza FOOTER ---*/
@@ -274,18 +281,16 @@ footer {
 /*----medias query----*/
 @media only screen and (max-width: 800px) {
   .textoPrincipal {
-    font-size: 16px;
+    font-size: 14px;
     margin: 20px; }
   .espacioContacto {
     padding: 10%; }
   .video iframe {
     width: 380px;
     height: 214px; }
-  .textoCondiciones p {
-    font-size: 11px; }
-  .carousel {
-    width: 80%;
-    margin-top: 10%; } }
+  .textoProductos {
+    padding-left: 0;
+    padding-top: 30%; } }
 
 @media only screen and (min-width: 992px) {
   .principal {
@@ -310,18 +315,5 @@ footer {
   .location iframe {
     width: 450px;
     height: 200px; }
-  #formulario1 {
-    margin: 30px; } }
-
-@media only screen and (min-width: 1200px) {
-  .principal {
-    padding: 50px;
-    line-height: 1.5;
-    font-size: 18px; }
-  #adoptables {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-around; }
   #formulario1 {
     margin: 30px; } }
