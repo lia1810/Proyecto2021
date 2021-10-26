@@ -51,7 +51,11 @@ main {
 
     .principal {
         color: $marronOscuro;
+<<<<<<< HEAD
         padding: 3%;
+=======
+        padding: 10%;
+>>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
         text-align: justify;
         line-height: 1.5;
         display: flex;
@@ -73,7 +77,11 @@ main {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+<<<<<<< HEAD
         padding: 3%;
+=======
+        padding: 5%;
+>>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
         background-color: $fondoOscuro;
         color: $colorPiel;
 
@@ -109,12 +117,17 @@ main {
             padding-top: 30px;
         }
 
+<<<<<<< HEAD
         h3 {
             text-align: center;
         }
 
         p {
             margin: 0;
+=======
+        p {
+            margin-bottom: 0;
+>>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
         }
 
         .card {
@@ -141,6 +154,7 @@ main {
 
 .fondoTarjeta {
     padding-top: 80px;
+<<<<<<< HEAD
     border: none;
 
     p {
@@ -155,6 +169,11 @@ main {
 
     .textoCondiciones {
         padding-top: 40%;
+=======
+
+    .textoCondiciones {
+        padding-top: 50%;
+>>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
     }
 }
 
@@ -178,7 +197,10 @@ main {
         margin-left: auto;
         font-size: 12px;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
 }
 
 #team {
@@ -414,7 +436,11 @@ footer {
 
 @media only screen and (max-width: 800px) {
     .textoPrincipal {
+<<<<<<< HEAD
         font-size: 14px;
+=======
+        font-size: 16px;
+>>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
         margin: 20px;
     }
 
@@ -427,9 +453,21 @@ footer {
         height: 214px;
     }
 
+<<<<<<< HEAD
     .textoProductos {
         padding-left: 0;
         padding-top: 30%;
+=======
+    .textoCondiciones {
+        p {
+            font-size: 11px;
+        }
+    }
+
+    .carousel {
+        width: 80%;
+        margin-top: 10%;
+>>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
     }
 }
 

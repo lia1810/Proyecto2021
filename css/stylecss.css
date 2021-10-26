@@ -32,7 +32,11 @@ main {
     margin-top: 30px; }
   main .principal {
     color: #472c1b;
+<<<<<<< HEAD
     padding: 3%;
+=======
+    padding: 10%;
+>>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
     text-align: justify;
     line-height: 1.5;
     display: flex;
@@ -48,7 +52,11 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     padding: 3%;
+=======
+    padding: 5%;
+>>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
     background-color: rgba(39, 37, 37, 0.863);
     color: #fcdec0; }
     main .colaborando img {
@@ -71,6 +79,7 @@ main {
       text-align: center;
       padding-bottom: 30px;
       padding-top: 30px; }
+<<<<<<< HEAD
     main #adoptables h3 {
       text-align: center; }
     main #adoptables p {
@@ -85,10 +94,17 @@ main {
       color: #472c1b;
       margin-top: 5px;
       margin-bottom: 30px; }
+=======
+    main #adoptables p {
+      margin-bottom: 0; }
+    main #adoptables .card {
+      margin: 5px; }
+>>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
   main #venta {
     padding-top: 150px; }
 
 .fondoTarjeta {
+<<<<<<< HEAD
   padding-top: 80px;
   border: none; }
   .fondoTarjeta p {
@@ -99,6 +115,11 @@ main {
     text-align: center; }
   .fondoTarjeta .textoCondiciones {
     padding-top: 40%; }
+=======
+  padding-top: 80px; }
+  .fondoTarjeta .textoCondiciones {
+    padding-top: 50%; }
+>>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
 
 #inquilinos {
   background-image: url(../img/perro-gato.jpg);
@@ -281,16 +302,28 @@ footer {
 /*----medias query----*/
 @media only screen and (max-width: 800px) {
   .textoPrincipal {
+<<<<<<< HEAD
     font-size: 14px;
+=======
+    font-size: 16px;
+>>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
     margin: 20px; }
   .espacioContacto {
     padding: 10%; }
   .video iframe {
     width: 380px;
     height: 214px; }
+<<<<<<< HEAD
   .textoProductos {
     padding-left: 0;
     padding-top: 30%; } }
+=======
+  .textoCondiciones p {
+    font-size: 11px; }
+  .carousel {
+    width: 80%;
+    margin-top: 10%; } }
+>>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
 
 @media only screen and (min-width: 992px) {
   .principal {
