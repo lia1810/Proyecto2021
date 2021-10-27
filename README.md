@@ -12,5 +12,7 @@ El proyecto propone la adopción responsable y brinda información sobre el buen
 ### Tecnologías usadas
 La página se estructuró utilizando html y css.
 
-### Enlace
+### Enlaces
 https://lia1810.github.io/Proyecto2021/
+
+https://valoranimal.000webhostapp.com/index.html
