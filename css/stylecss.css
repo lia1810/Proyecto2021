@@ -32,11 +32,7 @@ main {
     margin-top: 30px; }
   main .principal {
     color: #472c1b;
-<<<<<<< HEAD
     padding: 3%;
-=======
-    padding: 10%;
->>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
     text-align: justify;
     line-height: 1.5;
     display: flex;
@@ -47,16 +43,14 @@ main {
     main .principal .centrado {
       text-align: center;
       margin: 20px; }
+  main .equipo {
+    padding-top: 80px; }
   main .colaborando {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
     padding: 3%;
-=======
-    padding: 5%;
->>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
     background-color: rgba(39, 37, 37, 0.863);
     color: #fcdec0; }
     main .colaborando img {
@@ -79,7 +73,6 @@ main {
       text-align: center;
       padding-bottom: 30px;
       padding-top: 30px; }
-<<<<<<< HEAD
     main #adoptables h3 {
       text-align: center; }
     main #adoptables p {
@@ -94,33 +87,23 @@ main {
       color: #472c1b;
       margin-top: 5px;
       margin-bottom: 30px; }
-=======
-    main #adoptables p {
-      margin-bottom: 0; }
-    main #adoptables .card {
-      margin: 5px; }
->>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
   main #venta {
     padding-top: 150px; }
 
 .fondoTarjeta {
-<<<<<<< HEAD
   padding-top: 80px;
   border: none; }
   .fondoTarjeta p {
-    margin: 0; }
+    margin: 0;
+    font-size: large; }
   .fondoTarjeta .textoProductos {
     padding-top: 100px;
     color: black;
     text-align: center; }
   .fondoTarjeta .textoCondiciones {
     padding-top: 40%; }
-=======
-  padding-top: 80px; }
-  .fondoTarjeta .textoCondiciones {
-    padding-top: 50%; }
->>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
 
+/*---ADOPTABLES---*/
 #inquilinos {
   background-image: url(../img/perro-gato.jpg);
   background-repeat: no-repeat;
@@ -139,6 +122,7 @@ main {
     margin-left: auto;
     font-size: 12px; }
 
+/*---EQUIPO---*/
 #team {
   display: flex;
   padding: 40px 40px 60px 40px;
@@ -197,7 +181,7 @@ main {
     #team .workers #persona4 {
       background-image: url(../img/persona4.jpg); }
 
-/*----Legislacion---*/
+/*----LEGISLACION---*/
 .legal {
   width: 100%;
   background-color: #472c1b; }
@@ -224,7 +208,7 @@ main {
     color: #597cf0;
     transform: scale(1.1, 1.1); }
 
-/* ---- Empieza Formulario Contacto----*/
+/* ---- CONTACTO----*/
 .espacioContacto {
   background-color: #ece3d9;
   flex-wrap: wrap-reverse; }
@@ -264,8 +248,8 @@ main {
     .espacioContacto #formulario1 input[type=submit]:hover {
       background-color: #597cf0; }
 
-/* ---- Termina Formulario Contacto----*/
-/* ---Empieza FOOTER ---*/
+/* ---- TERMINA CONTACTO----*/
+/* ---FOOTER ---*/
 footer {
   background-image: linear-gradient(150deg, #fffff5 0, #e8ddbf 50%, #c5b58c 100%);
   height: 80px;
@@ -292,38 +276,27 @@ footer {
       footer .socialmedia .enlaces a:hover {
         color: #597cf0; }
 
-/* ---Termina FOOTER ---*/
-/*---Whatsapp---*/
+/* ---TERMINA FOOTER ---*/
+/*---WHATSAPP---*/
 #wa a {
   position: fixed;
   right: 30px;
   bottom: 20px; }
 
+/*---TERMINA WHATSAPP---*/
 /*----medias query----*/
 @media only screen and (max-width: 800px) {
   .textoPrincipal {
-<<<<<<< HEAD
     font-size: 14px;
-=======
-    font-size: 16px;
->>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
     margin: 20px; }
   .espacioContacto {
     padding: 10%; }
   .video iframe {
     width: 380px;
     height: 214px; }
-<<<<<<< HEAD
   .textoProductos {
     padding-left: 0;
     padding-top: 30%; } }
-=======
-  .textoCondiciones p {
-    font-size: 11px; }
-  .carousel {
-    width: 80%;
-    margin-top: 10%; } }
->>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
 
 @media only screen and (min-width: 992px) {
   .principal {

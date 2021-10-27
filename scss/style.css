@@ -72,6 +72,10 @@ main .principal .centrado {
   margin: 20px;
 }
 
+main .equipo {
+  padding-top: 80px;
+}
+
 main .colaborando {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,6 +167,7 @@ main #venta {
 
 .fondoTarjeta p {
   margin: 0;
+  font-size: large;
 }
 
 .fondoTarjeta .textoProductos {
@@ -175,6 +180,7 @@ main #venta {
   padding-top: 40%;
 }
 
+/*---ADOPTABLES---*/
 #inquilinos {
   background-image: url(../img/perro-gato.jpg);
   background-repeat: no-repeat;
@@ -196,6 +202,7 @@ main #venta {
   font-size: 12px;
 }
 
+/*---EQUIPO---*/
 #team {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,7 +304,7 @@ main #venta {
   background-image: url(../img/persona4.jpg);
 }
 
-/*----Legislacion---*/
+/*----LEGISLACION---*/
 .legal {
   width: 100%;
   background-color: #472c1b;
@@ -337,7 +344,7 @@ main #venta {
           transform: scale(1.1, 1.1);
 }
 
-/* ---- Empieza Formulario Contacto----*/
+/* ---- CONTACTO----*/
 .espacioContacto {
   background-color: #ece3d9;
   -ms-flex-wrap: wrap-reverse;
@@ -402,8 +409,8 @@ main #venta {
   background-color: #597cf0;
 }
 
-/* ---- Termina Formulario Contacto----*/
-/* ---Empieza FOOTER ---*/
+/* ---- TERMINA CONTACTO----*/
+/* ---FOOTER ---*/
 footer {
   background-image: linear-gradient(150deg, #fffff5 0, #e8ddbf 50%, #c5b58c 100%);
   height: 80px;
@@ -447,14 +454,15 @@ footer .socialmedia .enlaces a:hover {
   color: #597cf0;
 }
 
-/* ---Termina FOOTER ---*/
-/*---Whatsapp---*/
+/* ---TERMINA FOOTER ---*/
+/*---WHATSAPP---*/
 #wa a {
   position: fixed;
   right: 30px;
   bottom: 20px;
 }
 
+/*---TERMINA WHATSAPP---*/
 /*----medias query----*/
 @media only screen and (max-width: 800px) {
   .textoPrincipal {

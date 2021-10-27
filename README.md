@@ -13,4 +13,4 @@ El proyecto propone la adopción responsable y brinda información sobre el buen
 La página se estructuró utilizando html y css.
 
 ### Enlace
-https://github.com/lia1810/Proyecto2021.git
+https://lia1810.github.io/Proyecto2021/

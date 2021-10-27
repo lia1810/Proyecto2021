@@ -8,7 +8,6 @@
     padding: 0;
 }
 
-
 .logoNombre {
     display: flex;
     margin-left: 10px;
@@ -37,7 +36,6 @@
 
 /* Empieza MAIN  */
 
-
 main {
     display: flex;
     justify-content: space-around;
@@ -51,11 +49,7 @@ main {
 
     .principal {
         color: $marronOscuro;
-<<<<<<< HEAD
         padding: 3%;
-=======
-        padding: 10%;
->>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
         text-align: justify;
         line-height: 1.5;
         display: flex;
@@ -72,16 +66,16 @@ main {
         }
     }
 
+    .equipo {
+        padding-top: 80px;
+    }
+
     .colaborando {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-<<<<<<< HEAD
         padding: 3%;
-=======
-        padding: 5%;
->>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
         background-color: $fondoOscuro;
         color: $colorPiel;
 
@@ -101,11 +95,9 @@ main {
         width: 100%;
         margin: 30px;
         padding: 50px;
-
     }
 
     #adoptables {
-
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -117,17 +109,12 @@ main {
             padding-top: 30px;
         }
 
-<<<<<<< HEAD
         h3 {
             text-align: center;
         }
 
         p {
             margin: 0;
-=======
-        p {
-            margin-bottom: 0;
->>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
         }
 
         .card {
@@ -154,11 +141,11 @@ main {
 
 .fondoTarjeta {
     padding-top: 80px;
-<<<<<<< HEAD
     border: none;
 
     p {
         margin: 0;
+        font-size: large;
     }
 
     .textoProductos {
@@ -169,16 +156,11 @@ main {
 
     .textoCondiciones {
         padding-top: 40%;
-=======
-
-    .textoCondiciones {
-        padding-top: 50%;
->>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
     }
 }
+/*---ADOPTABLES---*/
 
 #inquilinos {
-
     background-image: url(../img/perro-gato.jpg);
     background-repeat: no-repeat;
     background-position: top;
@@ -197,11 +179,8 @@ main {
         margin-left: auto;
         font-size: 12px;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
 }
+/*---EQUIPO---*/
 
 #team {
     display: flex;
@@ -217,7 +196,6 @@ main {
 
     .workers {
         justify-content: space-around;
-
 
         .trabajadores {
             width: 250px;
@@ -268,7 +246,6 @@ main {
 
         #persona1 {
             background-image: url(../img/persona1.jpg);
-
         }
 
         #persona2 {
@@ -285,7 +262,8 @@ main {
     }
 }
 
-/*----Legislacion---*/
+/*----LEGISLACION---*/
+
 .legal {
     width: 100%;
     background-color: $marronOscuro;
@@ -321,13 +299,12 @@ main {
     }
 }
 
-
-
-/* ---- Empieza Formulario Contacto----*/
+/* ---- CONTACTO----*/
 
 .espacioContacto {
     background-color: $fondoClaro;
     flex-wrap: wrap-reverse;
+
     .location {
         padding-top: 20px;
 
@@ -339,6 +316,7 @@ main {
 
     #formulario1 {
         padding-top: 20px;
+
         .tipoDeMascota {
             display: flex;
 
@@ -381,10 +359,10 @@ main {
     }
 }
 
-/* ---- Termina Formulario Contacto----*/
+/* ---- TERMINA CONTACTO----*/
 
 
-/* ---Empieza FOOTER ---*/
+/* ---FOOTER ---*/
 
 footer {
     background-image: $gradiente;
@@ -394,7 +372,6 @@ footer {
     color: $marronOscuro;
     display: flex;
     font-size: 20px;
-
 
     .socialmedia {
         font-size: 18px;
@@ -417,30 +394,27 @@ footer {
 
             a:hover {
                 color: $azulHover;
-
             }
         }
     }
 }
 
-/* ---Termina FOOTER ---*/
-/*---Whatsapp---*/
+/* ---TERMINA FOOTER ---*/
+
+/*---WHATSAPP---*/
+
 #wa a {
     position: fixed;
     right: 30px;
     bottom: 20px;
 }
+/*---TERMINA WHATSAPP---*/
 
 /*----medias query----*/
 
-
 @media only screen and (max-width: 800px) {
     .textoPrincipal {
-<<<<<<< HEAD
         font-size: 14px;
-=======
-        font-size: 16px;
->>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
         margin: 20px;
     }
 
@@ -453,27 +427,13 @@ footer {
         height: 214px;
     }
 
-<<<<<<< HEAD
     .textoProductos {
         padding-left: 0;
         padding-top: 30%;
-=======
-    .textoCondiciones {
-        p {
-            font-size: 11px;
-        }
-    }
-
-    .carousel {
-        width: 80%;
-        margin-top: 10%;
->>>>>>> a7dbbb507255d75ce8a575b665415cc8d8b509c6
     }
 }
 
-
 @media only screen and (min-width: 992px) {
-
     .principal {
         width: 60%;
         padding: 50px;
